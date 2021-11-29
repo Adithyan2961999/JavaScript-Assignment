@@ -1,0 +1,211 @@
+<html>
+    <head>
+        <title>JavaScript</title>
+        <link rel="stylesheet" href="./style.css">
+        <script>
+            function validation()
+            {
+                var name=document.getElementById("name");
+                var fathername=document.getElementById("fathersname");
+                var email=document.getElementById("email");
+                var address=document.getElementById("address");
+                var paddress=document.getElementById("paddress");
+                var date=document.getElementById("date");
+                var number=document.getElementById("number").value
+                var regx=/[7-9]\d{9}/;
+                
+                if(name.value.trim()=="")
+                {
+                    name.style.border="solid 2px red";
+                    document.getElementById("lbl")
+                    .style.visibility="visible";
+                    return false;
+                }
+                if(fathername.value.trim()=="")
+                {
+                    fathername.style.border="solid 2px red";
+                    document.getElementById("lblf")
+                    .style.visibility="visible";
+                    return false;
+                }
+                if(email.value.trim()=="")
+                {
+                    email.style.border="solid 2px red";
+                    document.getElementById("lble")
+                    .style.visibility="visibility";
+                    return false;
+                }
+                if(address.value.trim()=="")
+                {
+                    address.style.border="solid 2px red";
+                    document.getElementById("lbla")
+                    .style.visibility="visibility";
+                    return false;
+                }
+                if(paddress.value.trim()=="")
+                {
+                    paddress.style.border="solid 2px red";
+                    document.getElementById("lblpa")
+                    .style.visibility="visibility";
+                    return false;
+                }
+                if(date.value.trim()=="")
+                {
+                    date.style.border="solid 2px red";
+                    document.getElementById("lbldob")
+                    .style.visibility="visibility";
+                    return false;
+                }
+                if(regx.test(number) == false)
+                {
+                    document.getElementById("lbln0").style.visibility="visibily";
+                }
+                else
+                {
+                    return true;
+                }
+
+            }
+        </script>
+    </head>
+    <body>
+        <div id="header">
+            <h1>Submit your application</h1>
+        <h3>for .NET Developer (Fresher)</h3>
+        </div>
+        <div id="content1">
+            <form >
+                <h3>Personal Information</h3>
+                <p>Name as per ID proof <sup>*</sup>
+                    <label id="lbl" style="color: red; visibility: hidden;">Please Enter your Name</label><br>
+                    <input type="text" id="name" required>
+                
+            </p>
+                    <p>
+                        Email <sup>*</sup>
+                        <label id="lble" style="color: red; visibility: hidden;">Email is Required</label><br>
+                        <input type="text" id="email" required>
+                    </p>
+                    <p>
+                        Current Address <sup>*</sup>
+                        <label id="lbla" style="color: red; visibility: hidden;">Address is Required</label><br>
+                        <input type="text" id="address" placeholder="Address Line 1" required>
+                    </p>
+                    <p>
+                        <br>
+                        <input type="text" id="city" placeholder="city">
+                        <select name="State" id="state">
+                        <option value="Andhra Pradhesh">Andhra Pradhesh</option>
+                        <option value="Arunachal Pradhesh">Arunachal Pradhesh</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Himachal Pradesh">Himachal Pradesh </option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Madhaya Pradesh">Madhaya Pradesh</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Manipur">Manipur</option>
+                        <option value="Meghalaya">Meghalaya</option>
+                        <option value="Mizoram">Mizoram</option>
+                        <option value="Nagaland">Nagaland</option>
+                        <option value="Odisha">Odisha</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Sikkim">Sikkim</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Tripura">Tripura</option>
+                        <option value="Uttarakhand">Uttarakhand</option>
+                        <option value="Uttra Pradesh">Uttra Pradesh</option>
+                        </select>
+                    </p>
+                    <p>
+                        Permanent Address<sup>*</sup>
+                        <label id="lblpa" style="color: red; visibility: hidden;">Address is Required</label><br>
+                        <input type="text" id="paddress" placeholder="Address line 1" required>
+                    </p>
+                    <p>
+                        <br>
+                        <input type="text" id="pcity" placeholder="City">
+                        <select name="State" id="pstate">
+                            <option value="Andhra Pradhesh">Andhra Pradhesh</option>
+                            <option value="Arunachal Pradhesh">Arunachal Pradhesh</option>
+                            <option value="Assam">Assam</option>
+                            <option value="Bihar">Bihar</option>
+                            <option value="Chhattisgarh">Chhattisgarh</option>
+                            <option value="Goa">Goa</option>
+                            <option value="Gujarat">Gujarat</option>
+                            <option value="Haryana">Haryana</option>
+                            <option value="Himachal Pradesh">Himachal Pradesh </option>
+                            <option value="Jharkhand">Jharkhand</option>
+                            <option value="Karnataka">Karnataka</option>
+                            <option value="Kerala">Kerala</option>
+                            <option value="Madhaya Pradesh">Madhaya Pradesh</option>
+                            <option value="Maharashtra">Maharashtra</option>
+                            <option value="Manipur">Manipur</option>
+                            <option value="Meghalaya">Meghalaya</option>
+                            <option value="Mizoram">Mizoram</option>
+                            <option value="Nagaland">Nagaland</option>
+                            <option value="Odisha">Odisha</option>
+                            <option value="Punjab">Punjab</option>
+                            <option value="Rajasthan">Rajasthan</option>
+                            <option value="Sikkim">Sikkim</option>
+                            <option value="Tamil Nadu">Tamil Nadu</option>
+                            <option value="Telangana">Telangana</option>
+                            <option value="Tripura">Tripura</option>
+                            <option value="Uttarakhand">Uttarakhand</option>
+                            <option value="Uttra Pradesh">Uttra Pradesh</option>
+                            </select>
+                    </p>
+            </form>
+        </div>
+        <div>
+            <form>
+                <p>
+                    <br><br>
+                    <br>
+                    Father's Name<sup>*</sup>
+                    <label id="lblf" style="color: red; visibility: hidden;">Last name is required</label><br>
+                    <input type="Text" id="fathersname" required>
+                </p>
+                <p>
+                    Date of Birth<sup>*</sup>
+                    <label id="lbldob" style="color: red; visibility: hidden;">required</label><br>
+                    <input type="date" id="date">
+                    <input type="number" id="number" placeholder="Mobile No" required>
+                    <label id="lblno" style="color: red; visibility: hidden;"></label>
+                </p>
+                <p>
+                    <br>
+                    <input type="text" id="addressline2" placeholder="Address line 2">
+                </p>
+                <p>
+                    <br>
+                    <input type="number" id="zipcode" placeholder="Zip Code">
+                </p>
+                <p>
+                    <br>
+                    <input type="text" id="paddressLine2" placeholder="Address line 2">
+                </p>
+                <p>
+                    <br>
+                    <input type="number" id="pzipcode" placeholder="Zip Code">
+                </p>
+            </form>
+        </div>
+        <div id="photopara">
+            <br>
+            Upload Profile Photo<sup>*</sup> (JPG/PNG format only)
+            <p>Please upload a photo of yourself. Your face should be clearly visible. Make sure the image size does not exceed 500KB.</p>
+            <p>
+                <button type="image" id="image" name="UPLOAD PHOTO" >UPLOAD IMAGE</button>
+            </p>
+            <button onclick="validation();" type="submit" name="next" id="submit">NEXT</button>
+        </div>
+    </body>
+</html>

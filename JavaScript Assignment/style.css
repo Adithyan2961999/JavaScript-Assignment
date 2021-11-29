@@ -1,0 +1,102 @@
+#header{
+    text-align: center;
+}
+#name{
+    width: 400px;
+    height: 40px;
+}
+#email{
+    width: 400px;
+    height: 40px;
+}
+#address{
+    width: 400px;
+    height: 40px;
+}
+#city{
+    width: 200px;
+    height: 40px;
+}
+#state{
+    width: 200px;
+    height: 40px;
+}
+#paddress{
+    width: 400px;
+    height: 40px;
+}
+#pcity{
+    width: 200px;
+    height: 40px;
+}
+#pstate{
+    width: 200px;
+    height: 40px;
+}
+#fathersname{
+    width: 400px;
+    height: 40px;
+}
+#date{
+    width: 200px;
+    height: 40px;
+}
+#number{
+    width: 200px;
+    height: 40px;
+}
+#addressline2{
+    width: 400px;
+    height: 40px;
+}
+#zipcode{
+    width: 400px;
+    height: 40px;
+}
+#paddressline2{
+    width: 400px;
+    height: 40px;
+}
+#pzipcode{
+    width: 400px;
+    height: 40px;
+}
+#content1{
+    float: left;
+    margin-left: 20%;
+    margin-right: 30px;
+}
+#content2{
+    float: left;
+}
+sup{
+    color: red;
+}
+#photopara{
+    clear: both;
+    margin-left: 20%;
+}
+#submit{
+    float: left;
+    margin-left: 70%;
+    color: white;
+    background-color: rgb(42, 42, 233);
+    font-size: 20px;
+    border-radius: 5px;
+    width: 80px;
+}
+#submit:hover{
+    background-color: dodgerblue;
+} 
+#image{
+    color: rgb(42, 42, 233);
+    border-color: rgb(42, 42, 233);
+    width: 200px;
+    height: 30px;
+    border-radius: 6px;
+    background-color: wh;
+}
+#image:hover{
+    color: white;
+    background-color: dodgerblue;
+}
